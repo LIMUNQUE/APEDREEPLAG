@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Producto 1",
+        "description": "Descripción del producto 1",
+        "long_description": "Descripción larga del producto 1",
+        "imageUrl": "https://i.ibb.co/TmsVH4K/1.jpg",
+        "form": "https://forms.gle/ETLCYU91jmkuSX83A",
+        "price": 150,
+        "inscripciones": 0,
+        "horas": 40,
+        "cupo_max": 50
+        
+    }
+]
