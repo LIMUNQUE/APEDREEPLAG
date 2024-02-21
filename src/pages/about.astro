@@ -4,8 +4,33 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="About">
-  <section class="px-8% py-10 flex flex-col gap-24 text-black">
-    <article class="flex flex-col gap-5">
+  <section class="px-8% py-10 flex flex-col gap-10 text-black">
+    <article class="flex flex-col gap-10">
+      <div class="history flex flex-row justify-between items-center flex-wrap gap-1">
+        <div class="flex-1 w-64">
+          <span class="flex gap-1 justify-center items-center">
+            <h1 class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold">Misión</h1>
+          </span>
+          <p class="text-center lg:px-20">
+            Brindar servicios de perfeccionamiento, capacitación profesional y certificación por competencias laborales con estándares de calidad, para potenciar las habiliades y destrezas de los usuarios, contribuyendo al desarrollo económico, productivo y social del país.
+          </p>
+        </div>
+        
+        <div class="flex-1 w-64">
+          <span class="flex gap-1 justify-center items-center">
+            <h1
+              class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+            >
+              Visión
+            </h1>
+          </span>
+            <p class="text-center lg:px-20">
+              Al 2025, consolidarnos como la principal oferta de perfeccionamieno, capacitación profesional, formación y certificación por competencias laborales, contribuyendo a la empleabilidad y al desarrollo económico productivo y social del país.
+            </p>
+        </div>
+      </div>
+        
+      
       <span class="flex gap-1 justify-center items-center">
         <h1
           class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
@@ -26,6 +51,7 @@ import Footer from "../components/Footer.astro";
         <div class="support flex gap-52 flex-wrap justify-center">
           <div class="flex justify-center items-center flex-col gap-10">
             <span class="flex gap-1 items-center">
+              
               <h1
                 class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
               >
@@ -89,6 +115,7 @@ import Footer from "../components/Footer.astro";
     <span class="item2"></span>
     <span class="item3"></span>
   </section>
+  <Footer/>
 
   <style>
     span.item {
