@@ -6,8 +6,10 @@ import Footer from "../components/Footer.astro";
 <Layout title="home">
   <section
     transition:animate="slide"
-    class="home cursor-default px-8% text-white gap-4"
+    
+    class="home cursor-default px-8% text-white gap-4 "
   >
+  <img src="/images/ICPshort.png" alt="ICP" class="w-2/6">
     <h1 class="slogan text-6xl font-semibold">
       Innovación <span
         class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
@@ -21,10 +23,10 @@ import Footer from "../components/Footer.astro";
     </div>
   </section>
 
-  <section class="section-two relative px-8% py-5 flex flex-col gap-8">
-    <span class="item"></span>
+  <section class="section-two relative px-8% py-5 flex flex-col gap-8 bg-[url('/images/icpbg.webp')] w-full bg-cover">
+      <span class="item "></span>
 
-    <article>
+    <article >
       <span class="flex gap-1 justify-center items-center">
         <h1
           class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
@@ -35,17 +37,19 @@ import Footer from "../components/Footer.astro";
     </article>
 
     <article
-      class="art2 w-full text-lg flex justify-between items-center flex-wrap"
+      class="art2 text-lg flex justify-between items-center flex-wrap "
     >
-      <span class="item2"></span>
-      <span class="max-w-xl"
+      <span class="item2">
+      </span>
+      <span class="max-w-xl text-center"
         >La asociación de Rectores y directores de escuelas particulares laicos, populares del Guayas (APDREEPLAG), es una organización que ofrece capacitaciones y emite certificaciones por competencias laborales tanto a entidades públicas como a personas jurídicas y naturales en diversos sectores. Nuestra misión es mejorar las habilidades y competencias laborales de los trabajadores ecuatorianos, garantizando un proceso de aprendizaje efectivo y reconocimiento formal de las capacidades adquiridas.</span
       >
-      <img class="w-96 hover:animate-jump" src="/images/Service.svg" alt="" />
+      <img class="w-96 hover:animate-jump" src="/images/woman.webp" alt="" />
     </article>
+    
   </section>
 
-  <section class="section-three relative px-8% py-10 flex flex-col gap-8">
+  <section class="section-three relative px-8% py-10 flex flex-col gap-8 bg-[url('/images/icpbg2.webp')] w-full bg-cover">
     <span class="item3"></span>
 
     <article>
@@ -59,11 +63,11 @@ import Footer from "../components/Footer.astro";
     </article>
 
     <article
-      class="art2 w-full text-lg flex justify-between items-center flex-wrap"
+      class="art2 w-full text-lg flex justify-between items-center flex-wrap "
     >
       <img
         class="w-96 hover:animate-jump animate-once"
-        src="/images/mision.svg"
+        src="/images/man.webp"
         alt=""
       />
       <span class="item4"></span>
@@ -82,6 +86,7 @@ import Footer from "../components/Footer.astro";
 
 <style>
   .home {
+    
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.7),
@@ -101,6 +106,7 @@ import Footer from "../components/Footer.astro";
   .section-two {
     width: 100%;
     min-height: 70vh;
+    
   }
 
   .section-three {
@@ -138,7 +144,7 @@ import Footer from "../components/Footer.astro";
     height: 10rem;
     transform: rotate(60deg) skewX(-12deg);
     border-radius: 6rem;
-    background: linear-gradient(30deg, blue, rgb(0, 136, 132));
+    background: linear-gradient(30deg, rgb(133, 133, 252), rgb(0, 136, 132));
     filter: blur(5rem);
     opacity: 0.8;
     display: none;
