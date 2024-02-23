@@ -2,8 +2,6 @@
 // Importa los módulos necesarios
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase/config";
-import test from './test.jsx';
-import {Tabs, Tab} from "@nextui-org/react";
 
 // Crea un array para almacenar los cursos
 let courses = [];
@@ -33,24 +31,12 @@ await getCourses();
 
 // Exporta el array de cursos
 export { courses };
-
-export { test };
-
 ---
-
-<div class="flex flex-wrap gap-4">
-    <Tabs key="md" radius={"md"} aria-label="Tabs radius">
-      <Tab key="photos" title="Photos"/>
-      <Tab key="music" title="Music"/>
-      <Tab key="videos" title="Videos"/>
-    </Tabs>
-</div>
-
 
 <section class="section-cards">
   {
     courses.map((course) => (
-      <main data-category="Industria" class="course">
+      <main>
         <img src={course.imageUrl} alt="" />
         <h2 class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold">
           {course.title}
