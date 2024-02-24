@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Cards from "../components/Cards.astro";
 import Footer from "../components/Footer.astro";
+import CourseNavbar from "../components/CourseNavbar.astro";
 ---
 
 <Layout title="Cursos">
@@ -20,8 +21,10 @@ import Footer from "../components/Footer.astro";
         La capacitación es un proceso que te ayuda a mejorar tus conocimientos y habilidades en un área específica. Con nuestros programas curriculares, podrás aprender o reforzar lo que necesitas para tu trabajo. La capacitación te beneficia al mejorar tus opciones laborales y tu capacidad de emprendimiento.
       </p>
     </article>
-    <Cards />
+    <CourseNavbar />   
+    <Cards title="Personal" />
     
+    <Cards title="Industria" />
     <article class="px-8% flex flex-col gap-5">
       
       <span class="flex gap-1 items-center">
@@ -52,6 +55,9 @@ import Footer from "../components/Footer.astro";
 </Layout>
 
 <style>
+  html {
+      scroll-behavior: smooth;
+    }
   span.item {
     position: absolute;
     top: 40px;

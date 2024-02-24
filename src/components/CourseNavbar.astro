@@ -1,0 +1,82 @@
+<header class="header px-8% flex flex-row w-full justify-center gap-4">
+    <div class="  text-white flex flex-row w-full justify-center gap-4">
+      <a
+        class="py-3 hover:text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 transition"
+        href="#anchor-name"
+        ><span
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
+          >T</span
+        >ODOS</a
+      >
+      <a
+        class="py-3 hover:text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 transition"
+        href="#industria"
+        ><span
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
+          >I</span
+        >NDUSTRIA</a
+      >
+      <a
+        class="py-3 hover:text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 transition"
+        href="#personal"
+        ><span
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
+          >P</span
+        >ERSONAL</a
+      >
+    </div>
+  </header>
+  
+  <style>
+    .header {
+      background-color: rgb(9, 23, 61);
+      display: grid;
+      opacity: 0.96;
+    }
+  
+    .nav {
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    .redes a:hover {
+      filter: invert(13%) sepia(90%) saturate(5054%) hue-rotate(245deg)
+        brightness(73%) contrast(121%);
+      transition: all 0.2s ease-in-out;
+    }
+  
+    span.item {
+      position: absolute;
+      top: 5px;
+      right: 0;
+      width: 65px;
+      height: 30px;
+      /* transform: rotate(90deg) skewX(-12deg); */
+      border-radius: 1.5rem;
+      background-color: #008697;
+      filter: blur(1.5rem);
+      opacity: 0.8;
+      display: none;
+    }
+  
+    @media (width > 400px) {
+      span.item {
+        right: 100px;
+        opacity: 0.8;
+        display: block;
+      }
+    }
+  
+    span.item2 {
+      position: absolute;
+      top: 7px;
+      left: 20px;
+      width: 85px;
+      height: 25px;
+      border-radius: 1rem;
+      background: linear-gradient(35deg, rgb(7, 100, 170), rgb(38, 124, 185));
+      filter: blur(1.3rem);
+      opacity: 0.8;
+      display: none;
+    }
+  </style>
+  
