@@ -4,7 +4,19 @@ import Cards from "../components/Cards.astro";
 import Footer from "../components/Footer.astro";
 import CourseNavbar from "../components/CourseNavbar.astro";
 ---
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+/>
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css"
+/>
 
+
+
+<body class="light-theme">
 <Layout title="Cursos">
   <section class="flex flex-col gap-14 py-10 px-8% bg-[url('/images/icpbg2.webp')] w-full bg-cover">
     <article class="full flex flex-col gap-3 ">
@@ -21,10 +33,22 @@ import CourseNavbar from "../components/CourseNavbar.astro";
         La capacitación es un proceso que te ayuda a mejorar tus conocimientos y habilidades en un área específica. Con nuestros programas curriculares, podrás aprender o reforzar lo que necesitas para tu trabajo. La capacitación te beneficia al mejorar tus opciones laborales y tu capacidad de emprendimiento.
       </p>
     </article>
-    <CourseNavbar />   
-    <Cards title="Personal" />
     
-    <Cards title="Industria" />
+    <rux-tabs id="tab-set-id-1" small="">
+      <rux-tab id="tab-id-1" selected="">Personal</rux-tab>
+      <rux-tab id="tab-id-2">Industria</rux-tab>
+      <rux-tab id="tab-id-3">Tab 3</rux-tab>
+    </rux-tabs>
+
+    <rux-tab-panels aria-labelledby="tab-set-id-1">
+      <rux-tab-panel aria-labelledby="tab-id-1"><Cards title="Personal" /></rux-tab-panel>
+      <rux-tab-panel aria-labelledby="tab-id-2"><Cards title="Industria" /></rux-tab-panel>
+      <rux-tab-panel aria-labelledby="tab-id-3">Tab 3 HTML content</rux-tab-panel>
+    </rux-tab-panels>
+
+    
+    
+    
     <article class="px-8% flex flex-col gap-5">
       
       <span class="flex gap-1 items-center">
@@ -53,6 +77,12 @@ import CourseNavbar from "../components/CourseNavbar.astro";
   </section>
   <Footer />
 </Layout>
+</body>
+
+<script
+    type="module"
+    src="https://unpkg.com/@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.esm.js"
+></script>
 
 <style>
   html {
